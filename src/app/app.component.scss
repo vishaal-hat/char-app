@@ -1,0 +1,123 @@
+.home-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ECEFF6;
+  overflow: hidden;
+}
+
+.test {
+    display: grid;
+    grid-template-columns: minmax(50px, 250px);
+    grid-template-rows: minmax(50px, 100px);
+    grid-template-areas:
+      "icon  header header header"
+      "nav  main main main"
+      "nav  main main main";
+    width: 90%;
+    height: 90vh;
+    z-index: 3;
+    border-radius: 1rem;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    opacity: 0.8;
+  }
+
+  .pos-center {
+      position:  absolute;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+  }
+  
+  .sp-2 {
+    grid-column: 2/-1;
+  }
+  
+  .sr-2 {
+    grid-row: 2/-1;
+  }
+  
+  .b {
+    border: 1px solid #F3F1F4;
+  }
+  
+  .c-r {
+    background: #FFFFFF;
+  }
+  
+  .c-b {
+    background: #FFFFFF;
+  }
+  
+  .c-o {
+    background: #FFFFFF;
+  }
+  
+  .c-g {
+    background: #FFFFFF;
+  }
+  
+  .b-l {
+    border-top-left-radius: 1rem;
+  }
+  
+  .b-r {
+    border-top-right-radius: 1rem;
+  }
+  
+  .b-br {
+    border-bottom-right-radius: 1rem;
+  }
+  
+  .b-bl {
+    border-bottom-left-radius: 1rem;
+  }
+  
+  .grid-center {
+    display: grid;
+    place-content: center;
+  }
+
+  .blue-circle {
+    position: absolute;
+    background: #0993FA;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 40rem;
+    top: -15rem;
+    right: -10rem;
+    z-index: 2;
+    filter: blur(50px);
+  }
+
+  .green-circle {
+    position: absolute;
+    background: #80EBDB;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 40rem;
+    bottom: -20rem;
+    left: -10rem;
+    z-index: 2;
+    filter: blur(50px);
+  }
+  
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  .test-login-page {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    // z-index: 9999;
+    background: #ffffff40;
+    // backdrop-filter: blur(10px);
+  }
+
+  
